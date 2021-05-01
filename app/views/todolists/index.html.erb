@@ -1,0 +1,11 @@
+<div class="list-wrap">
+<% @lists.each do |list| %>
+  <div class="list-box">
+    <%= attachment_image_tag list, :image, :fill, 200, 200, format: 'jpeg' %>
+    <div class="list-comment">
+      <span class="list-body"><%= list.body %></span>
+      <span class="list-title"><%=link_to list.title, todolist_path(list.id) %></span>
+    </div>
+  </div>
+<% end %>
+</div>
