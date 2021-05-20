@@ -91,7 +91,7 @@ main {
 .list-title {
   display: block;
   font-size: 18px;
-    overflow: hidden;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
